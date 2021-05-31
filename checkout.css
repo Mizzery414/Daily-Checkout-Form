@@ -182,7 +182,7 @@ footer .rightFooter {
   padding: 10px;
 }
 /* Responsive Sizing */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .topnav a,
   .topnav input[type="text"] {
     float: none;
