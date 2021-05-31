@@ -1,0 +1,122 @@
+/* Main Styling */
+
+* {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+#datetime {
+  margin: 10px;
+  padding: 5px;
+}
+
+/* Unit and Crew ID Styling */
+
+.unit {
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.crew {
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.idComments {
+  margin-right: 20px;
+  padding: 5px;
+}
+
+/* Condition Styling */
+
+.milesAndCondition {
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.conditionComments {
+  align-items: end;
+  justify-items: center;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+/* Exterior Styling */
+.exterior {
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.exteriorComments {
+  margin-right: 20px;
+  padding: 5px;
+}
+
+/* Interior Styling */
+.interior {
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.interiorComments {
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.narcs p {
+  font-weight: bold;
+}
+/* Button Styling */
+
+.myButton {
+  box-shadow: inset 0px 1px 0px 0px #97c4fe;
+  background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+  background-color: #3d94f6;
+  border-radius: 6px;
+  border: 1px solid #337fed;
+  color: #ffffff;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #1570cd;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+  background-color: #1e62d0;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+@media screen and (max-width: 480px) {
+  .idComments,
+  .conditionComments,
+  .exteriorComments,
+  .interiorComments {
+    visibility: hidden;
+  }
+}

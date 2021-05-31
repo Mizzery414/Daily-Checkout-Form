@@ -1,0 +1,190 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="checkout.css">
+
+<body>
+    <!-- Header Section     -->
+    <section class="header">
+        <h1 id="title">Arcata Mad-River Ambulance</h1>
+        <h2>Daily Checkout Form</h2>
+        <p id="description">Please fill out and submit daily</p>
+    </section>
+
+    <hr>
+
+    <!-- Submit Button -->
+
+    <a href="#" class="myButton">submit</a>
+
+    <!-- Unit ID Section  -->
+
+    <div class="grid-container">
+        <div class="form">
+            <form id="checkoutForm">
+                <div class="datetime">
+                    <input id="datetime" type="datetime-local" name="datetime">
+                </div>
+                <section class="unit">
+                    <label for="unit">Unit # :</label>
+                    <select name="unit" id="unit">
+                        <option value="select">Select</option>
+                        <option value="1">30</option>
+                        <option value="2">31</option>
+                        <option value="3">32</option>
+                        <option value="4">33</option>
+                        <option value="5">34</option>
+                        <option value="6">35</option>
+                    </select>
+                </section>
+            </form>
+
+            <!--  Crew ID Section  -->
+
+            <form id="id-form" autocomplete>
+                <section class="crew">
+                    <label for="crew1">Crew 1 :</label>
+                    <select name="crew1" id="crew1">
+                        <option value="crew1">Select</option>
+                        <option value="anthony">Anthony Benelisha</option>
+                        <option value="doug">Doug Boileau</option>
+                        <option value="bill">Bill Bonser</option>
+                        <option value="alexC">Alexandria Counts</option>
+                        <option value="nick">Nick Comer</option>
+                        <option value="brittaney">Brittaney Lewis</option>
+                        <option value="daniel">Daniel O'Hern</option>
+                        <option value="melanie">Melanie Rowsey-McWilliams</option>
+                        <option value="kelly">Kelly Scott</option>
+                        <option value="alexS">Alex Sutter</option>
+                        <option value="jt">John Thomas</option>
+                        <option value="megan">Megan Valdavinos</option>
+                        <option value="evan">Evan VonWerlhof</option>
+                        <option value="emily">Emily Whitcomb</option>
+                    </select>
+                </section>
+                <section for="crew2" class="crew">
+                    <label for="crew2">Crew 2 :</label>
+                    <select name="crew2" id="crew2">
+                        <option value="crew2">Select</option>
+                        <option value="anthony">Anthony Benelisha</option>
+                        <option value="doug">Doug Boileau</option>
+                        <option value="bill">Bill Bonser</option>
+                        <option value="alexC">Alexandria Counts</option>
+                        <option value="nick">Nick Comer</option>
+                        <option value="brittaney">Brittaney Lewis</option>
+                        <option value="daniel">Daniel O'Hern</option>
+                        <option value="melanie">Melanie Rowsey-McWilliams</option>
+                        <option value="kelly">Kelly Scott</option>
+                        <option value="alexS">Alex Sutter</option>
+                        <option value="jt">John Thomas</option>
+                        <option value="megan">Megan Valdavinos</option>
+                        <option value="evan">Evan VonWerlhof</option>
+                        <option value="emily">Emily Whitcomb</option>
+                    </select>
+                </section>
+            </form>
+        </div>
+
+        <!-- Unit and Crew ID Comment Section -->
+
+        <div class="idComments">Comments
+            <form id="idComments">
+                <label for="comments"></label>
+                <textarea rows="5" cols="33"></textarea>
+            </form>
+        </div>
+    </div>
+    <hr>
+
+    <!--  Unit Condition Section  -->
+    <div class="milesAndCondition grid-container">
+        <form id="condition">
+            <label for="condition">
+                <h3>Readiness :</h3>
+            </label>
+            <div class="mileage">
+                <label for="mileage">Mileage</label>
+                <input type="tel" id="mileage" name="milage" required>
+            </div>
+            <div class="fuel">
+                <p>Fuel level &gt; 1/2 tank?</p>
+                <input type="radio" id="yesFuel" name="fuel" value="fuel" checked required>
+                <label for="yesFuel">Yes</label>
+                <input type="radio" id="noFuel" name="fuel" value="fuel" required>
+                <label for="noFuel">No</label>
+                <input type="radio" id="otherFuel" name="fuel" value="fuel" required>
+                <label for="otherFuel">Other</label>
+            </div>
+        </form>
+
+        <!--  Unit Condition Comment Section -->
+        <div class="conditionComments">Comments
+            <form id="conditionComments">
+                <label for="comments"></label>
+                <textarea rows="5" cols="33"></textarea>
+            </form>
+        </div>
+
+    </div>
+    <hr>
+
+    <!--  Exterior Condition Section  -->
+    <div class="exterior grid-container">
+        <form id="exterior">
+            <label for="exterior">
+                <h3>Exterior :</h3>
+            </label>
+            <div class="mainO2">
+                <label for="main02">Main O2 psi</label>
+                <input type="tel" name="exterior" min="500" max="2000" required>
+            </div>
+        </form>
+
+        <!--   Exterior Condition Comments Section   -->
+        <div class="exteriorComments">Comments
+            <form id="exteriorComments">
+                <label for="comments"></label>
+                <textarea rows="4" cols="33"></textarea>
+            </form>
+        </div>
+
+    </div>
+    <hr>
+
+    <!--  Interior Condition Section  -->
+    <div class="interior grid-container">
+
+        <form id="interior">
+            <label for="interior">
+                <h3>Interior :</h3>
+            </label>
+            <div class="portable">
+                <label for="portable">Portable O2 psi</label>
+                <input type="tel" name="exterior" min="1000" max="2000" required>
+            </div>
+
+            <div class="narcs">
+                <p>Controlled Meds -Initials- :</p>
+                <label for="initials"></label>
+                <input type="text" id="crew2" name="name" required minlength="2" maxlength="3"
+                    placeholder="crew member 1">
+                <input type="text" id="crew2" name="name" required minlength="2" maxlength="3"
+                    placeholder="crew member 2">
+            </div>
+        </form>
+
+        <!--   Interior Condition Comments Section   -->
+        <div class="interiorComments">Comments
+            <form id="interiorComments">
+                <label for="comments"></label>
+                <textarea rows="5" cols="33"></textarea>
+            </form>
+        </div>
+
+    </div>
+    <hr>
+
+    <!-- Submit Button -->
+
+    <a href="#" class="myButton">submit</a>
+
+</body>
